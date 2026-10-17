@@ -173,6 +173,9 @@ namespace YARG.Core.Game
             public bool NoStarPowerOverlap = false;
 
             [SettingType(SettingType.Toggle)]
+            public bool PenalizeOverhit = true;
+
+            [SettingType(SettingType.Toggle)]
             public bool EnableLanes = true;
 
             [SettingType(SettingType.Special)]
@@ -190,6 +193,7 @@ namespace YARG.Core.Game
                 return new DrumsPreset
                 {
                     NoStarPowerOverlap = NoStarPowerOverlap,
+                    PenalizeOverhit = PenalizeOverhit,
                     EnableLanes = EnableLanes,
                     HitWindow = HitWindow.Copy()
                 };
@@ -205,6 +209,7 @@ namespace YARG.Core.Game
                     soloBonusStarMultiplierThresholds,
                     mode,
                     NoStarPowerOverlap,
+                    PenalizeOverhit,
                     EnableLanes);
             }
         }

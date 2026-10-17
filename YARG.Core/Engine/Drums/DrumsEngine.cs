@@ -91,6 +91,12 @@ namespace YARG.Core.Engine.Drums
 
         public virtual void Overhit()
         {
+            // If overhits are not penalized, ignore them entirely.
+            if (!EngineParameters.PenalizeOverhit)
+            {
+                return;
+            }
+
             // Can't overhit before first note is hit/missed
             if (NoteIndex == 0)
             {

@@ -295,6 +295,7 @@ public class DrumEngineTester : EngineTester
             SoloBonusStarMultiplierThresholds,
             DrumsEngineParameters.DrumMode.ProFourLane,
             false,
+            true,
             true);
 
         return (new YargDrumsEngine(notes, syncTrack, engineParams, false, false), notes);
@@ -326,6 +327,7 @@ public class DrumEngineTester : EngineTester
             SoloBonusStarMultiplierThresholds,
             DrumsEngineParameters.DrumMode.ProFourLane,
             false,
+            true,
             true);
 
         return (new YargDrumsEngine(notes, syncTrack, engineParams, false, false), notes);
